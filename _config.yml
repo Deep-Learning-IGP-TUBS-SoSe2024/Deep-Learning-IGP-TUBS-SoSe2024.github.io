@@ -1,17 +1,17 @@
-title: DL IGP TUBS SoSe2023
+title: DL IGP TUBS SoSe2024
 description: > # this means to ignore newlines until "baseurl:"
-  Final projects developed in the course Deep Learning 2023 from
+  Final projects developed in the course Deep Learning 2024 from
   the Institute of Geodesy and Photogrammetry at the Technical 
   University of Braunschweig.
 permalink: ':title/'
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://deep-learning-igp-tubs-sose2023.github.io/ # the base hostname & protocol for your site, e.g. http://example.com
+url: https://deep-learning-igp-tubs-sose2024.github.io/ # the base hostname & protocol for your site, e.g. http://example.com
 site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
-author: Deep Learning IGP TUBS 2023 # add your name
+author: Deep Learning IGP TUBS 2024 # add your name
 author-img: course_logo.jpg # add your photo
-about-author: Final projects developed in the course Deep Learning 2023 from IGP at TUBS # add description
+about-author: Final projects developed in the course Deep Learning 2024 from IGP at TUBS # add description
 social-twitter: # add your Twitter handle
 social-facebook: # add your Facebook handle
 social-github: # add your Github handle

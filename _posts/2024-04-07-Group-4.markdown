@@ -1,0 +1,28 @@
+---
+layout: post
+title: Group 4 Title of your final project
+date: 2024-04-07 13:32:20 +0300
+description: This is Group 4 final project # Add post description (optional)
+img: workflow.jpg # Add image post (optional), put your image in assets/img/
+fig-caption: # Add figcaption (optional)
+tags: [Projects]
+---
+
+You can use markdown to fill your project page.
+
+- Add a brief description of your project.
+
+- If you wish, you can write your names here.
+
+Put your images in the assets/img folder. Then, you can add them in this way:
+
+![My Figure]({{site.baseurl}}/assets/img/we-in-rest.jpg)
+
+## Dataset
+A brief description of your dataset: number of images, application, image size, etc.
+
+## Model(s)
+Present the model(s) used in your experiments as well as the experimental protocol followed.
+
+## Results
+Show your results and comment them briefly.
