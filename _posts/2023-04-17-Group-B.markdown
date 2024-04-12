@@ -1,0 +1,130 @@
+---
+layout: post
+title: YOLOv5vsYOLOv8
+date: 2023-04-17 13:32:20 +0300
+description: This is Group B final project # Add post description (optional)
+img: 018.jpg # Add image post (optional), put your image in assets/img/
+fig-caption: # Add figcaption (optional)
+tags: [Projects]
+---
+
+<h1 align="center">The Battle for Object Detection Supremacy</h1>
+
+<p align="center">
+  <a href="#authors">Authors</a> •
+  <a href="#dataset">Dataset</a> •
+  <a href="#models">Model(s)</a> •
+  <a href="#results">Results</a> •
+  <a href="#inferences">Inferences</a> •
+  <a href="#inferences">Summary</a> •
+  <a href="#task-distribution">Task Distribution</a> 
+</p>
+
+## Authors
+
+- Jose Manuel Gutierrez Castellanos
+- Eslam Shaarawy
+
+This work provides an overview and introduction of two main models used for object detection applications, showing outstanding results in performance and accuracy.
+
+The **YOLOv5 & YOLOv8** models underwent a rigorous series of experiments, encompassing **architectural variations**, **augmentation levels**, and the incorporation of **negative images**. Subsequently, a concise analysis of the inferences drawn from another publicly available dataset is presented and summarized. This experimental investigation is anticipated to contribute to an enhanced comprehension of the applied model designs, offering valuable insights for researchers interested in implementing cutting-edge solutions utilizing the YOLO family models.
+
+## Dataset
+
+The dataset used in our experiments is [NWPU VHR-10 Dataset](https://drive.google.com/drive/folders/13Vj27NP2TY2aJ5AlI4LGAnVd8ghEizrZ?usp=drive_link). **NWPU VHR-10 dataset** comprises **10 distinct categories** as observed in *Figure 1*, comprising airplane, baseball diamond, basketball court, bridge, harbor, ground track field, ship, storage tank, tennis court, and vehicle. and is enriched
+with 650 meticulously annotated images.
+
+<p align="center">
+  <img src="{{site.baseurl}}/assets/img/classes.png" alt="Image" width="570" height="240">
+  <br>
+  <em>Figure 1. Object examples as per category</em>
+</p>
+
+This dataset boasts a total of **715 RGB images**, sourced from Google Earth, with spatial resolutions spanning from **0.5m to 2m**. Additionally, it incorporates **85 pan-sharpened color infrared images**, characterized by a spatial resolution of 0.08m, procured from the **Vaihingen dataset (Cramer, 2010)**.
+
+
+## Model(s)
+
+The models used during this research are the following:
+
+### YOLOv5 Nano & X
+
+<details>
+  <summary >Model details</summary>
+
+<p align="center">
+  <img src="{{site.baseurl}}/assets/img/yolov5arch1.jpg" alt="Image" width="800" height="800">
+  <br>
+  <em>Figure 2. YOLOv5 architecture (RangeKing 2023)</em>
+</p>
+
+</details>
+
+### YOLOv8 Nano & X
+
+<details>
+  <summary >Model details</summary>
+
+<p align="center">
+  <img src="{{site.baseurl}}/assets/img/yolov8arch.jpg" alt="Image" width="800" height="800">
+  <br>
+  <em>Figure 3. YOLOv8 architecture (RangeKing 2023)</em>
+</p>
+
+</details>
+
+## Results
+
+The **optimizer** used during the experiments is **"SGD"**, **number of epochs** defined for training is **50**, **batch size** is set to **10** and the image size is set to the default one, which corresponds to **640**
+
+As illustrated in *Figure 4*, regarding the metrics and losses related to YOLOv5, it is evident that the *classification loss* curve displays minimal fluctuations, indicating satisfactory performance. However, the *objectness loss* and *bounding box loss* exhibit some degree of variability, suggesting room for improvement. This observation implies that the model could benefit from extended training epochs to facilitate convergence.
+
+As evident from the metrics depicted in *Figure 5* for YOLOv8, the situation parallels that of YOLOv5, with a the architectural difference. The *distributional focal loss* and *bounding box loss* exhibit areas of potential improvement. It is noteworthy that all experiments were conducted with an equivalent number of epochs; however, it is observed that experiments employing model X required extended training times due to the substantial difference in parameters.
+
+As anticipated, YOLOv8, as the latest iteration within the YOLO family, demonstrates noteworthy advancements when compared to its predecessor, YOLOv5.
+
+<p align="center">
+  <img src="{{site.baseurl}}/assets/img/yolov5metrics.png" alt="Image" width="800">
+  <br>
+  <em>Figure 4. YOLOv5 metrics and losses</em>
+</p>
+
+<p align="center">
+  <img src="{{site.baseurl}}/assets/img/yolov8metrics.png" alt="Image" width="800">
+  <br>
+  <em>Figure 5. YOLOv8 metrics and losses</em>
+</p>
+
+**To facilitate a more detailed tracking of the experiments conducted in this research paper, we have made our COMET workspace publicly accessible. Researchers are encouraged to utilize this resource to gain insights from our discoveries. Kindly scan the QR code to access it or follow the respective link [YOLOv5](https://www.comet.com/e-sharaawy/yolo-v5-positive-images-experiments/view/new/panels) - [YOLOv8](https://www.comet.com/josemanuelgtz/final-experiments/view/new/panels)** 
+
+
+## Inferences
+
+<p align="center">
+  <img src="{{site.baseurl}}/assets/img/018.jpg" alt="Image" width="533" height="637">
+  <br>
+  <em>Figure 6. Inference performed with the trained model X of YOLOv8 on NWPU VHR-10</em>
+</p>
+
+
+As depicted in Figure 6, the YOLOv8 model X, trained with the High augmentation configuration and incorporating the negative image set during training, demonstrates remarkable accuracy in object classification and precise localization of bounding boxes within the images.
+
+<p align="center">
+  <img src="{{site.baseurl}}/assets/img/dota.jpg" alt="Image" width="518" height="500">
+  <br>
+  <em>Figure 7. Inference performed with the trained model X of YOLOv8 on DOTA</em>
+</p>
+
+Despite YOLOv8 being trained on the relatively small and low-resolution NWPU VHR-10 dataset, as compared to the larger and higher-resolution DOTA or DIOR datasets, the model’s inferences on DOTA dataset yielded impressive results. Notably, the model exhibited exceptional confidence in detecting airplanes, as illustrated in Figure 7, where even a small airplane positioned in the upper-left corner of the image was detected with a remarkable confidence score of 0.87. It’s important to highlight that these inferences were conducted using non-standard image sizes, as we were dealing with higher-resolution images containing smaller objects compared to those used for YOLOv8 training. In Figure 7, the image size for inference was adjusted to 2632, yielding a confidence score of 0.80
+
+<!---
+
+## Summary
+
+YOLOv5 and YOLOv8 are distinguishable by their architectural characteristics. YOLOv5 utilizes a backbone comprising **CSP Darknet53**, augmented by the **SPP Neck**, **PANet**, and three independent detection heads. In contrast, YOLOv8 introduces unique features, including the **separation of its detection heads**, the reintroduction of the **free-anchor detector**, and the incorporation of a novel loss function.
+
+While YOLOv8 demonstrated superior performance in most experiments, it is noteworthy that YOLOv5 enjoys broader recognition, particularly within the scientific community, as evidenced by its higher citation count. This divergence may be attributed to YOLOv8’s status as a *cutting-edge technology (State of the Art)* that has yet to undergo extensive validation. Nonetheless, YOLOv8 exhibits substantial potential.
+
+In our experimental endeavors, we harnessed the **NWPU VHR-10 dataset**, albeit smaller in scale compared to other datasets. However, during the inference phase, we integrated selected images from the **DOTA dataset**, yielding notably promising results. This prompts consideration of the prospect of reversing the dataset hierarchy, with the DOTA dataset assuming a central role in experimentation. Such an approach holds promise for  ignificantly enhancing inference results, given DOTA’s encompassing **variation in image resolutions, aspect ratios of both images and objects, and overall object scale**, all of which can exert a substantial influence on final outcomes.
+
+-->
