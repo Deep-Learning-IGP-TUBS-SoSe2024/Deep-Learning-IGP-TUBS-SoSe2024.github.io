@@ -18,6 +18,10 @@ Put your images in the assets/img folder. Then, you can add them in this way:
 
 ![My Figure]({{site.baseurl}}/assets/img/we-in-rest.jpg)
 
+## Authors
+ - First Name, Last Name
+ - First Name, Last Name
+
 ## Dataset
 A brief description of your dataset: number of images, application, image size, etc.
 
