@@ -3,76 +3,30 @@ layout: post
 title: Comparison of State-of-the-Art and Traditional Networks for Image Segmentation on the ISPRS Potsdam Dataset
 date: 2024-09-07 13:32:20 +0300
 description: This is Group 6 final project # Add post description (optional)
-img: how-to-start.jpg # Add image post (optional), put your image in assets/img/
+img: group6_header.png # Add image post (optional), put your image in assets/img/
 fig-caption: # Add figcaption (optional)
 tags: [Projects]
 ---
 
-
-# __🎲 Final_Project 🎲__
-
-## 🌌 Introduction
-
-This project focuses on deep learning methods and provides scripts and notebooks that help build, train, and analyze models efficiently. The structure includes various components such as configuration settings, model creation tools, and utilities for model training and visualization.
-
-## 📂 Project Structure
-📂00-Proposal: Contains the project proposal and related documents.
-
-📂01-Presentation: Includes materials for the final presentation, such as:
-
-📂DL_Presentation_Template.pptx: PowerPoint presentation template used for showcasing the project.
-
-📂02-Report: Folder for the final report detailing the project and results.
-
-📂03-Code: This folder includes all the essential code for the project.
-
-- 📋 configs.py: Contains configuration settings for the project (e.g., hyperparameters, file paths, etc.).
-- 📋 fmain.py: Main script to execute specific functionalities of the project.
-- 📋 main.py: The primary file to launch the project’s main tasks.
-- 📋 tools: Additional tools and utilities used in the project.
-- 📋 README.md: This document, providing an overview of the project.
-- 📋 requirements.txt: A list of required packages and dependencies for the project.
-- 📂 bases
-    - 📋 ___init___ .py
-    - 📋 postdam_dataset.py
-    - 📋 utils.py
-    - 📋 wandbhelper.py
-- 📂 nets
-    - 📋 ___init___ .py
-    - 📋 feature_extractor.py
-    - 📋 pertrain_net.py
-    - 📋 tansunet.py
-    - 📋 unet_attention_model.py
-    - 📋 unet_Kan.py
-    - 📋 unet_Mamba.py
-    - 📋 unet_model.py
-    - 📋 unet_parts.py
-- 📂 tests
-    - 📋 EDA.ipynb
-    - 📋 test_datagernerator.ipynb
-    - 📋 test_dataset.py
-    - 📋 test_model.ipynb
-    - 📋 tooltest.ipynb
-    - 📋 unet.ipynb
-- 📂 tools
-    - 📋 callback.py
-    - 📋 datagernerator.py
-    - 📋 datasplitor.py
-    - 📋 training_loop.py
-
 ## Authors
  - Menghua, Xie
  - Leung, Yiu Chung
+
+## Introduction
+
+This project focuses on deep learning methods and provides scripts and notebooks that help build, train, and analyze models efficiently. The structure includes various components such as configuration settings, model creation tools, and utilities for model training and visualization.
 
 ## Dataset
 ISPRS Postdam Dataset
 
 this dataset include 37 pictures per type(IRRG, Digital surface model, label).
 each image 6000*6000*3
-![My Figure]({{site.baseurl}}/assets/img/imagestr.png)
+![My Figure]({{site.baseurl}}/assets/img/group6_imagestr.png)
+
 ## Model(s)
 we used unet transunet, umamba and ukan as the figure showing.
-![My Figure]({{site.baseurl}}/assets/img/result.png)
+![My Figure]({{site.baseurl}}/assets/img/group6_result.png)
+
 ## Results
 Regarding the effects of the sources of data
 No improvement for adding DSM for training Unet
