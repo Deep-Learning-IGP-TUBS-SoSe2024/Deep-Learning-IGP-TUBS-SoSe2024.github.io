@@ -62,20 +62,20 @@ We have the following results:
 
 ## Table Test 1
 
-![Test_1](https://github.com/Deep-Learning-IGP-TUBS-SoSe2024/Group_03/blob/main/Final_Project/03-Code/results/Test1.png)
+![Test 1]({{site.baseurl}}/assets/img/group3_result1.png)
 
 ## Table Test 2
 
-![Test_2](https://github.com/Deep-Learning-IGP-TUBS-SoSe2024/Group_03/blob/main/Final_Project/03-Code/results/Test2.png)
+![Test 2]({{site.baseurl}}/assets/img/group3_result2.png)
 
 ## Results Examples
 
 Here are some examples of the results:
 
-| ![Cloudy](https://github.com/Deep-Learning-IGP-TUBS-SoSe2024/Group_03/blob/main/Final_Project/03-Code/results/cloudy_003.jpg) | ![Dense Cloudy](https://github.com/Deep-Learning-IGP-TUBS-SoSe2024/Group_03/blob/main/Final_Project/03-Code/results/dense_cloudy_394.jpg) | ![Foggy](https://github.com/Deep-Learning-IGP-TUBS-SoSe2024/Group_03/blob/main/Final_Project/03-Code/results/fog_003.jpg) |
+| ![Cloudy]({{site.baseurl}}/assets/img/group3_cloudy.jpg) | ![Dense Cloudy]({{site.baseurl}}/assets/img/group3_densecloudy.jpg) | ![Foggy]({{site.baseurl}}/assets/img/group3_fog.jpg) |
 |:---:|:---:|:---:|
 | Cloudy | Dense Cloudy | Foggy |
 
-| ![Night](https://github.com/Deep-Learning-IGP-TUBS-SoSe2024/Group_03/blob/main/Final_Project/03-Code/results/night_278.jpg) | ![Rainy](https://github.com/Deep-Learning-IGP-TUBS-SoSe2024/Group_03/blob/main/Final_Project/03-Code/results/rain_610.jpg) | ![Snowy](https://github.com/Deep-Learning-IGP-TUBS-SoSe2024/Group_03/blob/main/Final_Project/03-Code/results/snow_292.jpg) |
+| ![Night]({{site.baseurl}}/assets/img/group3_night.jpg) | ![Rainy]({{site.baseurl}}/assets/img/group3_rain.jpg) | ![Snowy]({{site.baseurl}}/assets/img/group3_snow.jpg) |
 |:---:|:---:|:---:|
 | Night | Rainy | Snowy |
