@@ -1,32 +1,81 @@
 ---
 layout: post
-title: Group 3 Title of your final project
+title: Weathered Vision: Enhancing Object Detection in Adverse Weather
 date: 2024-04-08 13:32:20 +0300
 description: This is Group 3 final project # Add post description (optional)
-img: we-in-rest.jpg # Add image post (optional), put your image in assets/img/
+img: group3_header.jpg # Add image post (optional), put your image in assets/img/
 fig-caption: # Add figcaption (optional)
 tags: [Projects]
 ---
 
-You can use markdown to fill your project page.
-
-- Add a brief description of your project.
-
-- If you wish, you can write your names here.
-
-Put your images in the assets/img folder. Then, you can add them in this way:
-
-![My Figure]({{site.baseurl}}/assets/img/we-in-rest.jpg)
-
 ## Authors
- - First Name, Last Name
- - First Name, Last Name
+ - Luv Surve
+ - Hitesh Bhardwaj
 
 ## Dataset
-A brief description of your dataset: number of images, application, image size, etc.
+<body>
+    <p>This very-high-resolution (VHR) remote sensing image dataset was constructed by Dr. Gong Cheng et al. from Northwestern Polytechnical University (NWPU). It includes:</p>
+    <ul>
+        <li>715 color images acquired from Google Earth with spatial resolution ranging from 0.5 to 2 meters.</li>
+        <li>85 pansharpened color infrared images acquired from Vaihingen data with a spatial resolution of 0.08 meters.</li>
+        <li>In total, 800 VHR remote sensing images.</li>
+    </ul>
+    <p>Each line of the corresponding text files defines a ground truth bounding box with the following coordinates:</p>
+    <div class="highlight">
+        <p><strong>(x1, y1)</strong> – [top-left coordinate]</p>
+        <p><strong>(x2, y2)</strong> – [bottom-right coordinate]</p>
+    </div>
+    <p>The object classes are as follows:</p>
+    <ul>
+        <li><strong>1</strong> – Airplane</li>
+        <li><strong>2</strong> – Ship</li>
+        <li><strong>3</strong> – Storage Tank</li>
+        <li><strong>4</strong> – Baseball Diamond</li>
+        <li><strong>5</strong> – Tennis Court</li>
+        <li><strong>6</strong> – Basketball Court</li>
+        <li><strong>7</strong> – Ground Track Field</li>
+        <li><strong>8</strong> – Harbor</li>
+        <li><strong>9</strong> – Bridge</li>
+        <li><strong>10</strong> – Vehicle</li>
+    </ul>
+</body>
 
 ## Model(s)
-Present the model(s) used in your experiments as well as the experimental protocol followed.
+The model employed is YOLOv8 Medium (yolov8m.pt)
+
+The YOLOv8 (You Only Look Once version 8) model is a state-of-the-art object detection model developed by Ultralytics. It is part of the YOLO (You Only Look Once) series, renowned for its speed and accuracy in real-time object detection tasks.
+
+### Version Information
+
+- **Model:** Ultralytics YOLOv8.2.91 🚀
+- **Python Version:** 3.10.12
+
+### Key Features
+
+- **Enhanced Performance:** YOLOv8.2.91 represents a significant improvement over previous YOLO versions, offering superior accuracy and faster inference times.
+- **Real-Time Object Detection:** The model is designed to detect objects in real-time, making it ideal for applications requiring immediate feedback, such as video surveillance and autonomous driving.
+- **High Efficiency:** YOLOv8 is optimized for both speed and performance, utilizing advanced algorithms and optimizations to deliver high-quality results efficiently.
 
 ## Results
-Show your results and comment them briefly.
+We have the following results:
+# Results Examples
+
+## Table Test 1
+
+![Test_1](https://github.com/Deep-Learning-IGP-TUBS-SoSe2024/Group_03/blob/main/Final_Project/03-Code/results/Test1.png)
+
+## Table Test 2
+
+![Test_2](https://github.com/Deep-Learning-IGP-TUBS-SoSe2024/Group_03/blob/main/Final_Project/03-Code/results/Test2.png)
+
+## Results Examples
+
+Here are some examples of the results:
+
+| ![Cloudy](https://github.com/Deep-Learning-IGP-TUBS-SoSe2024/Group_03/blob/main/Final_Project/03-Code/results/cloudy_003.jpg) | ![Dense Cloudy](https://github.com/Deep-Learning-IGP-TUBS-SoSe2024/Group_03/blob/main/Final_Project/03-Code/results/dense_cloudy_394.jpg) | ![Foggy](https://github.com/Deep-Learning-IGP-TUBS-SoSe2024/Group_03/blob/main/Final_Project/03-Code/results/fog_003.jpg) |
+|:---:|:---:|:---:|
+| Cloudy | Dense Cloudy | Foggy |
+
+| ![Night](https://github.com/Deep-Learning-IGP-TUBS-SoSe2024/Group_03/blob/main/Final_Project/03-Code/results/night_278.jpg) | ![Rainy](https://github.com/Deep-Learning-IGP-TUBS-SoSe2024/Group_03/blob/main/Final_Project/03-Code/results/rain_610.jpg) | ![Snowy](https://github.com/Deep-Learning-IGP-TUBS-SoSe2024/Group_03/blob/main/Final_Project/03-Code/results/snow_292.jpg) |
+|:---:|:---:|:---:|
+| Night | Rainy | Snowy |
