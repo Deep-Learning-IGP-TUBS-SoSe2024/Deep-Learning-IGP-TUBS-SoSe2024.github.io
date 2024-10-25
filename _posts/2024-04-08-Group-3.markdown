@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Weathered Vision: Enhancing Object Detection in Adverse Weather
+title: Weathered Vision Enhancing Object Detection in Adverse Weather
 date: 2024-04-08 13:32:20 +0300
 description: This is Group 3 final project # Add post description (optional)
 img: group3_header.jpg # Add image post (optional), put your image in assets/img/
