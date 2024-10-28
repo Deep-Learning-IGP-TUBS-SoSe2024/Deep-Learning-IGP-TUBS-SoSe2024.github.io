@@ -36,4 +36,10 @@ The dataset used in our experiments is [THIS DATASET](https://drive.google.com/d
 The models employed in our experiments were YOLOv8 and YOLO-NAS.
 
 ## Results
-Show your results and comment them briefly.
+**Results YOLOv8:**
+
+![Results YOLOv8]({{site.baseurl}}/assets/img/group5_yolov8_results.png)
+
+**Results YOLO-NAS:**
+
+![Results YOLO-NAS]({{site.baseurl}}/assets/img/group5_yolonas_results.png)
