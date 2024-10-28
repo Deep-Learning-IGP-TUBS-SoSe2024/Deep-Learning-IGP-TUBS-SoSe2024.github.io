@@ -3,7 +3,7 @@ layout: post
 title: Evaluation of YOLO Models on DIOR Dataset
 date: 2024-04-06 13:32:20 +0300
 description: This is Group 5 final project # Add post description (optional)
-img: img1.jpg # Add image post (optional), put your image in assets/img/
+img: group5_yolov8_results.png # Add image post (optional), put your image in assets/img/
 fig-caption: # Add figcaption (optional)
 tags: [Projects]
 ---
