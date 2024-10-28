@@ -3,7 +3,7 @@ layout: post
 title: Improving object detection performance on hard to detect instances in DOTA
 date: 2024-04-07 13:32:20 +0300
 description: This is Group 4 final project # Add post description (optional)
-img: workflow.jpg # Add image post (optional), put your image in assets/img/
+img: group4_header.png # Add image post (optional), put your image in assets/img/
 fig-caption: # Add figcaption (optional)
 tags: [Projects]
 ---
