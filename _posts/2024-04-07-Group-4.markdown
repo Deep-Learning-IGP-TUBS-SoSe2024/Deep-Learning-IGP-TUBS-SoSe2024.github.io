@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Group 4 Title of your final project
+title: Improving object detection performance on hard to detect instances in DOTA
 date: 2024-04-07 13:32:20 +0300
 description: This is Group 4 final project # Add post description (optional)
 img: workflow.jpg # Add image post (optional), put your image in assets/img/
@@ -8,25 +8,40 @@ fig-caption: # Add figcaption (optional)
 tags: [Projects]
 ---
 
-You can use markdown to fill your project page.
-
-- Add a brief description of your project.
-
-- If you wish, you can write your names here.
-
-Put your images in the assets/img folder. Then, you can add them in this way:
-
-![My Figure]({{site.baseurl}}/assets/img/we-in-rest.jpg)
-
 ## Authors
- - First Name, Last Name
- - First Name, Last Name
+ - Said Harb
+ - Tim Schmidt
 
 ## Dataset
-A brief description of your dataset: number of images, application, image size, etc.
+The dataset used in our experiments is the [Dota Dataset](https://captain-whu.github.io/DOTA/). In particular we use the version 1.5 of this dataset. It consists of 2.806 Aerial images with different sizes. The image sizes vary from 800x800 to 20.000 x 20.000 pixels. On these images there are 16 classes labeled which are:
+
+- large vehicle
+- small vehicle
+- helicopter
+- plane
+- ship
+- swimmingpool
+- container crane
+- storage tank
+- bridge
+- harbor
+- roundabout
+- baseball-diamond
+- basketball court
+- ground track field
+- tennis court
+- soccerball field
 
 ## Model(s)
-Present the model(s) used in your experiments as well as the experimental protocol followed.
+The model employed is the YOLOv5n. 
+
+The newest version and information about the model can be found here: [Link](https://github.com/ultralytics/yolov5)
 
 ## Results
-Show your results and comment them briefly.
+Both employed approaches improved the detection performance on hard to detect instances considerably. However the oversampling apporach prooved to be slightly better, as the metrics are the best for this experiment.
+
+The following images show the mAP overall and the AP per class for the best experiment:
+
+![Results 1]({{site.baseurl}}/assets/img/group4_result1.png)
+
+![Results 2]({{site.baseurl}}/assets/img/group4_result2.png)

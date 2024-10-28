@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Group 5 Title of your final project
+title: Evaluation of YOLO Models on DIOR Dataset
 date: 2024-04-06 13:32:20 +0300
 description: This is Group 5 final project # Add post description (optional)
 img: img1.jpg # Add image post (optional), put your image in assets/img/
@@ -8,25 +8,32 @@ fig-caption: # Add figcaption (optional)
 tags: [Projects]
 ---
 
-You can use markdown to fill your project page.
-
-- Add a brief description of your project.
-
-- If you wish, you can write your names here.
-
-Put your images in the assets/img folder. Then, you can add them in this way:
-
-![My Figure]({{site.baseurl}}/assets/img/we-in-rest.jpg)
-
 ## Authors
- - First Name, Last Name
- - First Name, Last Name
+ - Amulya Harihara Narayana Rao
+ - Vigneshwar Karuppiah Ramanathan
 
 ## Dataset
-A brief description of your dataset: number of images, application, image size, etc.
+The dataset used in our experiments is [THIS DATASET](https://drive.google.com/drive/folders/1UdlgHk49iu6WpcJ5467iT-UqNPpx__CC).
+
+1. [DIOR dataset](https://github.com/Deep-Learning-IGP-TUBS-SoSe2024/Group_05/blob/main/Final_Project/Dior/EDA_Dior.ipynb)
+
+   - Exploratory Data Analysis on Dior Dataset
+
+   - Annotation formatting
+
+   - Bounding box representation of ground truth
+
+2. Under the [Dior](https://github.com/Deep-Learning-IGP-TUBS-SoSe2024/Group_05/tree/main/Final_Project/Dior) directory, you can also do the following:
+
+   - [Yolo annotation converter](https://github.com/Deep-Learning-IGP-TUBS-SoSe2024/Group_05/blob/main/Final_Project/Dior/helper_functions.py)
+   - [Dataset splitting](https://github.com/Deep-Learning-IGP-TUBS-SoSe2024/Group_05/blob/main/Final_Project/Dior/split_train_val.py)
+   - [Data Augmentation](https://github.com/Deep-Learning-IGP-TUBS-SoSe2024/Group_05/blob/main/Final_Project/Dior/data_aug.py)
+   - [File name extraction](https://github.com/Deep-Learning-IGP-TUBS-SoSe2024/Group_05/blob/main/Final_Project/Dior/file_name_extraction.py)
+   - [Plot sample](https://github.com/Deep-Learning-IGP-TUBS-SoSe2024/Group_05/blob/main/Final_Project/Dior/plot.py)
+   - [Sanity check](https://github.com/Deep-Learning-IGP-TUBS-SoSe2024/Group_05/blob/main/Final_Project/Dior/Utils/sanity.py)
 
 ## Model(s)
-Present the model(s) used in your experiments as well as the experimental protocol followed.
+The models employed in our experiments were YOLOv8 and YOLO-NAS.
 
 ## Results
 Show your results and comment them briefly.
